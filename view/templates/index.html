@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <main id="img_index">
+        <div id="login">
+            <div id="login_bloco">
+                <div id="login_bloco_img">
+                    <img id="login_bloco_img_logo" src="{{ url_for('static', filename='images/login/logo.png') }}" alt="Logo da FloraTime">
+                </div>
+                <div id="login_bloco_campos">
+                    <form action="/" method="POST">
+                        <div>
+                            <input class="login_bloco_campos_nom-pas" type="text" name="user"  placeholder="User" maxlength="20" required>
+                        </div>
+                        <div>
+                            <input class="login_bloco_campos_nom-pas" type="password" name="password" placeholder="Password" maxlength="20" required>
+                        </div>
+                        <div>
+                            <button type="submit" id="login_bloco_button">Login</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="rodape">
+            <h5 id="rodape_text">© 2024 - .. | FloraTime, todos os direitos reservados.</h5>
+        </div>
+    </footer>
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="img_updt-creat">
+        <div class="bloco_updt-creat">
+            <div class="bloco_updt-creat_container">
+                <h1 class="bloco_updt-creat_text">New Agendamento</h1>
+                <form action="/create" method="POST">
+                    <div class="bloco_updt-creat_group">
+                        <label class="bloco_updt-creat_label" for="horario">Horário:</label>
+                        <input class="bloco_updt-creat_input" type="datetime-local" id="horario" name="horario" required>
+                    </div>
+                    <div class="bloco_updt-creat_group">
+                        <label class="bloco_updt-creat_label" for="cliente">Cliente:</label>
+                        <input class="bloco_updt-creat_input" type="text" id="cliente" name="cliente" maxlength="60" required>
+                    </div>
+                    <div class="bloco_updt-creat_group">
+                        <label class="bloco_updt-creat_label" for="endereco">Endereço:</label>
+                        <input class="bloco_updt-creat_input" type="text" id="endereco" name="endereco" maxlength="120" required>
+                    </div>
+                    <div class="bloco_updt-creat_group">
+                        <label class="bloco_updt-creat_label" for="servico">Serviço:</label>
+                        <input class="bloco_updt-creat_input" type="text" id="servico" name="servico" maxlength="80" required>
+                    </div>
+                    <div class="bloco_updt-creat_group">
+                        <label class="bloco_updt-creat_label" for="valor">Valor:</label>
+                        <input class="bloco_updt-creat_input" type="number" id="valor" name="valor" step="0.01" required>
+                    </div>
+                    <div class="bloco_updt-creat_group">
+                        <label class="bloco_updt-creat_label" for="observacao">Observação:</label>
+                        <textarea id="observacao" name="observacao" rows="4" maxlength="500"></textarea>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-update">Criar</button>
+                        <a href="{{ url_for('home') }}" class="btn btn-cancel">Cancelar</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

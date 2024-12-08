@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div id="img_home">
+        <header>
+            <div id="bloco_but">
+                <span id="bloco_but_text">EXIT</span>
+                <a href="{{ url_for('login') }}" id="bloco_but_exit">
+                    <img src="{{ url_for('static', filename='icons/home/exit.svg') }}" alt="Icone de sair" id="home_icon">
+                </a>
+            </div>
+        </header>
+        <main id="container">
+            <div id="container_botao">
+                <span id="container_botao_text">AGENDAMENTO</span>
+                <a href="{{ url_for('create') }}"><button id="container_botao_btt">NEW</button></a>
+            </div>
+            <div id="container_lista">
+                <table id="container_table">
+                    <thead id="container_theade">
+                        <tr>
+                            <th scope="col">Ordem</th>
+                            <th scope="col">Horário</th>
+                            <th scope="col">Cliente</th>
+                            <th scope="col">Endereço</th>
+                            <th scope="col">Serviço</th>
+                            <th scope="col">Valor</th>
+                            <th scope="col">Observação</th>
+                            <th scope="col">Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for item in agendamentos %}
+                            <tr>
+                                <td>{{ item.ordem }}</td>
+                                <td>{{ item.horario }}</td>
+                                <td>{{ item.cliente }}</td>
+                                <td>{{ item.endereco }}</td>
+                                <td>{{ item.servico }}</td>
+                                <td>{{ item.valor }}</td>
+                                <td>{{ item.observacao }}</td>
+                                <td>
+                                    <div id="container_table_bloco-btt">
+                                        <a href="{{ url_for('update', ordem=item.ordem) }}"><button class="container_table_btt">UPDATE</button></a>
+                                        <form action="{{ url_for('delete', ordem=item.ordem) }}" method='POST'>
+                                            <button type="submit" class="container_table_btt" onclick="return confirm('Deseja excluir esse registro?')">DELETE</button>
+                                        </form>
+                                    </div>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="img_updt-creat">
+        <div class="bloco_updt-creat">
+            <div class="bloco_updt-creat_container">
+                <h1 class="bloco_updt-creat_text">Atualizar Agendamento</h1>
+                <form action="{{ url_for('update', ordem=dados.ordem) }}" method="POST">
+                    <div class="bloco_updt-creat_group">
+                        <label class="bloco_updt-creat_label" for="horario">Horário:</label>
+                        <input class="bloco_updt-creat_input" type="datetime-local" id="horario" name="horario" value="{{ dados.horario }}" required>
+                    </div>
+                    <div class="bloco_updt-creat_group">
+                        <label class="bloco_updt-creat_label" for="cliente">Cliente:</label>
+                        <input class="bloco_updt-creat_input" type="text" id="cliente" name="cliente" value="{{ dados.cliente }}" maxlength="60" required>
+                    </div>
+                    <div class="bloco_updt-creat_group">
+                        <label class="bloco_updt-creat_label" for="endereco">Endereço:</label>
+                        <input class="bloco_updt-creat_input" type="text" id="endereco" name="endereco" value="{{ dados.endereco }}" maxlength="120" required>
+                    </div>
+                    <div class="bloco_updt-creat_group">
+                        <label class="bloco_updt-creat_label" for="servico">Serviço:</label>
+                        <input class="bloco_updt-creat_input" type="text" id="servico" name="servico" value="{{ dados.servico }}" maxlength="80" required>
+                    </div>
+                    <div class="bloco_updt-creat_group">
+                        <label class="bloco_updt-creat_label" for="valor">Valor:</label>
+                        <input class="bloco_updt-creat_input" type="number" id="valor" name="valor" value="{{ dados.valor }}" step="0.01" required>
+                    </div>
+                    <div class="bloco_updt-creat_group">
+                        <label class="bloco_updt-creat_label" for="observacao">Observação:</label>
+                        <textarea id="observacao" name="observacao" rows="4" maxlength="500">{{ dados.observacao }}</textarea>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-update">Atualizar</button>
+                        <a href="{{ url_for('home') }}" class="btn btn-cancel">Cancelar</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

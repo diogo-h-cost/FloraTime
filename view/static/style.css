@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* ------------- Clear all ------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ------------- Index ------------- */
+
+#img_index {
+  background-image: url("images/login/fundo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 80vh;
+}
+
+#login {
+  width: 99.9%;
+  height: 93vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#login_bloco {
+  border: 3px solid #3f6940;
+  background-color: rgb(255, 255, 255, 86%);
+  width: 28vw;
+  height: 50vh;
+  border-radius: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#login_bloco_img {
+  width: 20vh;
+  height: 20vh;
+}
+
+#login_bloco_img_logo {
+  width: 10vw;
+  height: 18vh;
+  margin-top: -1.8vh;
+}
+
+#login_bloco_campos {
+  width: 24vw;
+  height: 27vh;
+  margin-top: -3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#login_bloco_button {
+  margin-top: 2vh;
+  margin-left: 4.2vw;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #5f9e61;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+#login_bloco_button:hover {
+  color: #4CAF50;
+  background-color: #ffffff;
+  border-color: #4CAF50;
+}
+
+#login_bloco_button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #4CAF50;
+  z-index: -1;
+  transition: transform 0.3s ease;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+#login_bloco_button:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.login_bloco_campos_nom-pas {
+  width: 14vw;
+  height: 4vh;
+  margin-top: 1.5vh;
+  margin-bottom: 3vh;
+}
+
+input, ::placeholder {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  padding-left: 0.2vw;
+}
+
+.rodape {
+  width: 100%;
+  height: 7vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #59885b;
+}
+
+#rodape_text {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: white;
+}
+
+/* ------------- Home ------------- */
+
+#img_home {
+  background-image: url("images/home/fundo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 90vh;
+}
+
+#bloco_but {
+  width: 100%;
+  height: 6vh;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding-top: 2vh;
+}
+
+#bloco_but_text {
+  margin-right: -0.7vw;
+}
+
+#bloco_but_exit {
+  text-decoration: none;
+}
+
+#home_icon {
+  width: 4vw;
+  height: 4vh;
+  margin-right: 1vw;
+  cursor: pointer;
+}
+
+#container {
+  width: 100%;
+  height: 92vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#container_botao {
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  width: 90vw;
+  height: 5vh;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+#container_botao_text {
+  letter-spacing: 0.01vw;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(100, 100, 100);
+  margin-right: 0.8vw;
+}
+
+#container_botao_btt {
+  width: 4vw;
+  height: 4vh;
+  margin-right: 4vw;
+  background-color: rgb(141, 141, 141);
+  color: white;
+  font-size: 1.6vh;
+  border: none;
+  border-radius: 1vh;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#container_botao_btt:hover {
+  background-color: rgb(177, 177, 177);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#container_botao_btt:active {
+  background-color: lightgrey;
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#container_lista {
+  width: 92vw;
+  height: 83.5vh;
+  overflow-x: auto;
+}
+
+#container_table {
+  margin-top: 1vh;
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#container_theade {
+  background-color: #919191;
+  color: white;
+  text-align: center;
+}
+
+th, td {
+  padding: 10px 15px;
+  border: 1px solid #b3b3b3;
+}
+
+th {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: white;
+}
+
+td {
+  letter-spacing: 0.01vw;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(78, 78, 78);
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+#container_table_bloco-btt {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.container_table_btt {
+  width: 4vw;
+  height: 3vh;
+  background-color: rgb(141, 141, 141);
+  color: white;
+  font-size: 1.4vh;
+  border: none;
+  border-radius: 1vh;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container_table_btt:hover {
+  background-color: rgb(177, 177, 177);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container_table_btt:active {
+  background-color: lightgrey;
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* ------------- CREATE - UPDATE ------------- */
+
+.img_updt-creat {
+  background-image: url("images/updt_creat/fundo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 90vh;
+}
+
+.bloco_updt-creat {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.bloco_updt-creat_container {
+  background-color: rgb(255, 255, 255, 86%);
+  border-radius: 12px;
+  border: 2px solid #929292;
+  padding: 3rem 2.5rem;
+  width: 26vw;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.bloco_updt-creat_text {
+  text-align: center;
+  font-size: 3vh;
+  margin-bottom: 2vh;
+  color: #686868;
+}
+
+.bloco_updt-creat_group {
+  margin-bottom: 1.5rem;
+}
+
+.bloco_updt-creat_label {
+  display: block;
+  font-size: 1.8vh;
+  font-weight: 500;
+  color: #686868;
+  margin-bottom: 1vh;
+}
+
+.bloco_updt-creat_input, textarea {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1.6vh;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+}
+
+.bloco_updt-creat_input:focus, textarea:focus {
+  border-color: #3b3b3b;
+  box-shadow: 0 0 5px rgba(73, 73, 73, 0.3);
+}
+
+textarea {
+  resize: none;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.btn {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  font-size: 2vh;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.btn-update {
+  background-color: #6bd46e;
+  color: white;
+  box-shadow: 0 4px 8px rgba(72, 126, 74, 0.2);
+}
+
+.btn-update:hover {
+  background-color: #52a355;
+  box-shadow: 0 6px 12px rgba(81, 207, 85, 0.6);
+}
+
+.btn-cancel {
+  background-color: #db5046;
+  color: white;
+  box-shadow: 0 4px 8px rgba(214, 48, 36, 0.4);
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-cancel:hover {
+  background-color: #b42c2c;
+  box-shadow: 0 6px 12px rgba(244, 67, 54, 0.4);
+}
