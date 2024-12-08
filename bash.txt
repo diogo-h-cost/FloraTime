@@ -1,0 +1,48 @@
+------------------------------- Ubuntu
+
+- Ambiente
+python3.10 -m venv .venv
+
+- Ativar
+source .venv/bin/activate
+
+- Desativar
+deactivate
+
+------------------------------- Windows
+
+- Ambiente
+python -m venv .venv
+
+- Ativar
+.venv\Scripts\activate
+
+- Desativar
+deactivate
+
+------------------------------- Install Flask
+
+(dentro do .venv)
+pip install flask
+
+------------------------------- Run
+
+1º executar api.py
+
+2º login
+    User: Admin
+    password: teste123
+
+------------------------------- Estrutura
+
+FloraTime
+    .venv -> ambiente
+    controller
+        control.py -> controle entre [view] e [models]
+    models
+        agend.py -> tabela agendamento
+        banco.py -> class CRUD
+    view
+        static -> icons / images / css
+        templates -> html
+    api.py -> app Flask
