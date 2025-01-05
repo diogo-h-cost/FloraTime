@@ -1,4 +1,4 @@
-## FloraTime
+# FloraTime
 Sistema de agendamento de horários para jardinagem.
 
 FloraTime foi desenvolvido como parte de um trabalho de Engenharia de Software, com o objetivo de implementar um CRUD utilizando a arquitetura em camadas (MVC). O projeto foi concebido como um exercício de prática em desenvolvimento de software, permitindo o aprendizado de conceitos fundamentais da programação em camadas.
@@ -34,7 +34,7 @@ Você irá precisar ter instalado:
 Faça o download da última Tag do projeto, depois extraía e abra com um editor.
 > https://github.com/diogo-h-cost/FloraTime/tags
 
-##### 2. Criar o ambiente
+#### 2. Criar o ambiente
 
 Abra o terminal dentro da pasta **FloraTime-1.0** e digite:
 
@@ -46,9 +46,7 @@ Abra o terminal dentro da pasta **FloraTime-1.0** e digite:
 - Windows
 > python -m venv .venv
 
-<br>
-
-##### 3. Ativar o ambiente
+#### 3. Ativar o ambiente
 
 No terminal:
 
@@ -60,9 +58,7 @@ No terminal:
 
 ❗️ Fechar terminal após.
 
-<br>
-
-##### 4. Alterar interpretador python
+#### 4. Alterar interpretador python
 
 Por padrão é selecionado **Global**, tem que alterar para o **.venv**, no Visual Studio Code precione:
 > CTRL + SHIFT + P
@@ -73,9 +69,7 @@ Digite:
 Selecione a opção que tem ('.venv')
 Ex: `Python 3.10.12('.venv')`
 
-<br>
-
-##### 5. Instalar pacotes
+#### 5. Instalar pacotes
 
 No terminal e com o ambiente (.venv) ativado:
 
@@ -83,27 +77,19 @@ No terminal e com o ambiente (.venv) ativado:
 
 🔍 Você pode listar todos pacotes com **pip list**
 
----
+## ⚙️ Execultar projeto
 
-### ⚙️ Execultar projeto
-
-<br>
-
-##### 1. Iniciar servidor
+#### 1. Iniciar servidor
 
 No terminal e dentro da pasta **FloraTime-1.0** insira:
 > python api.py
 
-<br>
-
-##### 2. Navegador
+#### 2. Navegador
 
 Após iniciar o servidor, o sistema estará rodando em:
 > http://127.0.0.1:5000
 
-<br>
-
-##### 3. Login
+#### 3. Login
 
 Para acessar insira:
 - **User**: Admin
@@ -111,9 +97,7 @@ Para acessar insira:
 
 ![Imagem](readme/login.png)
 
-<br>
-
-##### 4. Home
+#### 4. Home
 
 Temos os campos:
 - Nº de serviço
@@ -129,50 +113,36 @@ Temos os campos:
 ![Imagem da home](readme/home.png)
 🔍 Canto superior direito tem a opção de sair.
 
-<br>
-
-##### 5. Novo agendamento
+#### 5. Novo agendamento
 
 ![Imagem de new](readme/new.png)
 
-<br>
-
-##### 6. Home
+#### 6. Home
 
 Após criar um agendamento aparece as opções de **atualizar** ou **deletar** o registro (agendamento).
 
 ![Imagem da home](readme/new_home.png)
 
-<br>
-
-##### 7. Update
+#### 7. Update
 
 Ao clicar no botão update do registro, direciona para outra tela com os campos preenchidos para serem atualizados.
 
 ![Imagem de update](readme/update.png)
 
-<br>
-
-##### 8. Delete
+#### 8. Delete
 
 Ao clicar no botão delete do registro, exclui o mesmo do banco de dados.
 
 ![Imagem de delete](readme/delete.png)
 
----
+## 📍 Parar projeto
 
-### 📍 Parar projeto
-
-<br>
-
-##### 1. Parar servidor
+#### 1. Parar servidor
 
 No terminal pressione:
 > CTRL + C
 
-<br>
-
-##### 2. Desativar ambiente
+#### 2. Desativar ambiente
 
 - Linux / Windows
 > deactivate
@@ -181,9 +151,7 @@ No terminal pressione:
 
 🔍 Pode deletar o .venv e o banco caso queira.
 
-<br>
-
-##### 3. Alterar interpretador python
+#### 3. Alterar interpretador python
 
 Voltar para o padrão **Global**, no Visual Studio Code precione:
 > CTRL + SHIFT + P
@@ -193,9 +161,7 @@ Digite:
 
 Selecione a opção que tem **Global**
 
----
-
-### 📌 Versão
+## 📌 Versão
 
 Para as versões disponíveis, observe as [tags neste repositório](https://github.com/diogo-h-cost/FloraTime/tags).
 
