@@ -29,7 +29,7 @@ Você irá precisar ter instalado:
 
 ## 🔧 Instalação e configuração
 
-##### 1. Download do projeto
+#### 1. Download do projeto
 
 Faça o download da última Tag do projeto, depois extraía e abra com um editor.
 > https://github.com/diogo-h-cost/FloraTime/tags
