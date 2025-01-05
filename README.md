@@ -39,32 +39,44 @@ Faça o download da última Tag do projeto, depois extraía e abra com um editor
 Abra o terminal dentro da pasta **FloraTime-1.0** e digite:
 
 - Linux
-> python3.10 -m venv .venv
+```
+python3.10 -m venv .venv
+```
 
 ❗️ A versão do python pode variar conforme a versão instalada no linux.
 
 - Windows
-> python -m venv .venv
+```
+python -m venv .venv
+```
 
 #### 3. Ativar o ambiente
 
 No terminal:
 
 - Linux
-> source .venv/bin/activate
+```
+source .venv/bin/activate
+```
 
 - Windows
-> .venv\Scripts\activate
+```
+.venv\Scripts\activate
+```
 
 ❗️ Fechar terminal após.
 
 #### 4. Alterar interpretador python
 
 Por padrão é selecionado **Global**, tem que alterar para o **.venv**, no Visual Studio Code precione:
-> CTRL + SHIFT + P
+```
+CTRL + SHIFT + P
+```
 
 Digite:
-> Python: select interpreter
+```
+Python: select interpreter
+```
 
 Selecione a opção que tem ('.venv')
 Ex: `Python 3.10.12('.venv')`
@@ -72,8 +84,9 @@ Ex: `Python 3.10.12('.venv')`
 #### 5. Instalar pacotes
 
 No terminal e com o ambiente (.venv) ativado:
-
-> pip install flask
+```
+pip install flask
+```
 
 🔍 Você pode listar todos pacotes com **pip list**
 
@@ -82,7 +95,9 @@ No terminal e com o ambiente (.venv) ativado:
 #### 1. Iniciar servidor
 
 No terminal e dentro da pasta **FloraTime-1.0** insira:
-> python api.py
+```
+python api.py
+```
 
 #### 2. Navegador
 
@@ -140,12 +155,16 @@ Ao clicar no botão delete do registro, exclui o mesmo do banco de dados.
 #### 1. Parar servidor
 
 No terminal pressione:
-> CTRL + C
+```
+CTRL + C
+```
 
 #### 2. Desativar ambiente
 
 - Linux / Windows
-> deactivate
+```
+deactivate
+```
 
 ❗️ Fechar terminal após.
 
@@ -154,10 +173,14 @@ No terminal pressione:
 #### 3. Alterar interpretador python
 
 Voltar para o padrão **Global**, no Visual Studio Code precione:
-> CTRL + SHIFT + P
+```
+CTRL + SHIFT + P
+```
 
 Digite:
-> Python: select interpreter
+```
+Python: select interpreter
+```
 
 Selecione a opção que tem **Global**
 
