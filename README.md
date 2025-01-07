@@ -216,6 +216,7 @@ Este software foi desenvolvido para fins educacionais como parte de um projeto a
 - Qualquer tentativa de remover os direitos autorais será considerada uma violação dos termos desta licença.
 
 **Garantias:**
+
 Este software é fornecido “como esta”, sem garantias de qualquer tipo, explícitas ou implícitas, incluindo, mas não se limitando a, garantias de comercialização ou adequação a um propósito específico. O autor não será responsável por quaisquer danos ou prejuízos decorrentes do uso deste software.
 
 🔍 Para dúvidas ou permissões especiais, entre em contato.
